@@ -11,7 +11,7 @@ export default function App() {
   }
   useEffect(()=> {
     fetchCountriesData();
-  })
+  }, []) //empty array prevents infinite fetch call
   return (
     <>
       <StatusBar style='light'/>
